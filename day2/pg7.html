@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="success.html">
+        <fieldset>
+        <legend>Personal Details</legend>
+        <label for="nam">Name</label>
+        <input type="text" id="nam" name="nam" size="20" required><br>
+<label for="dob">DOB</label>
+<input type="date" name="dob" id="dob" placeholder="yyyy-mm-dd" required><br>
+<label for="gen">Gender</label>
+<input type="radio" id="gen" name="gen" value="M" required>Male
+<input type="radio" id="gen" name="gen" value="F" required checked>Female<br>
+<label for="nam">address</label>
+<textarea id="nam" name="nam" rows="2" cols="4" required>
+</textarea><br>
+<label for="ph">Phone Number</label>
+<input type="tel" id="ph" name="ph" pattern="[0-9]{10}" required><br>
+<label for="em">Email</label>
+<input type="email" id="em" name="em" required><br>
+<label for="pro">Profile Picture</label>
+<input type="File" id="pro" name="pro" required><br>
+</fieldset>
+<fieldset>
+<legend>Admission Details</legend>
+<label for="last">College Last Studied</label>
+<input type="text" id="last" name="last" list="lglist" required>
+<datalist id="lglist">
+    <option value="St Agnes College">
+        <option value="St Aloysius College">
+        <option value="Padua College">
+        <option value="Canara College">
+        <option value="Nitte College">
+        </datalist><br>
+        <label for="cor">Course</label>
+        <select name="cor" required>
+        <optgroup label="Science">
+        <option value="botony">Botony</option>
+        <option value="physics">Physics</option>
+        </optgroup>
+        <optgroup label="Commerce">
+        <option value="bcom">BCOM</option>
+        <option value="bba">BBA</option>
+</optgroup>
+<optgroup label="Computerscience">
+<option value="bca" selected="true">BCA</option>
+<option value="mca">MCA</option>
+</optgroup>
+</select><br>
+<label for="ar">Area Interested In</label>
+<input type="checkbox" id="ar" name="hobby" value="dancing" checked>Dancing
+<input type="checkbox" id="ar" name="hobby" value="singing" >Singing
+<input type="checkbox" id="ar" name="hobby" value="Sports" >Sports
+<input type="checkbox" id="ar" name="hobby" value="Paining" >Painting<br>
+</fieldset>
+<input type="submit" id="sub" name="sub" value="Register" >
+<input type="reset" id="cle" name="cle" value="Clear">
+</body>
+</html>
